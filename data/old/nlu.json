@@ -1,0 +1,213 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "indeed"
+      },
+      {
+        "intent": "affirm",
+        "text": "of course"
+      },
+      {
+        "intent": "affirm",
+        "text": "that sounds good"
+      },
+      {
+        "intent": "affirm",
+        "text": "correct"
+      },
+      {
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "never"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't think so"
+      },
+      {
+        "intent": "deny",
+        "text": "don't like that"
+      },
+      {
+        "intent": "deny",
+        "text": "no way"
+      },
+      {
+        "intent": "deny",
+        "text": "not really"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "coach",
+        "text": "coach"
+      },
+      {
+        "intent": "coach",
+        "text": "teach"
+      },
+      {
+        "intent": "coach",
+        "text": "train"
+      },
+      {
+        "intent": "coach",
+        "text": "mentor"
+      },
+      {
+        "intent": "coach",
+        "text": "tutor"
+      },
+      {
+        "intent": "coach",
+        "text": "give advice"
+      },
+      {
+        "intent": "coach",
+        "text": "instructor"
+      },
+      {
+        "intent": "recruitment",
+        "text": "recruit"
+      },
+      {
+        "intent": "recruitment",
+        "text": "recruitment"
+      },
+      {
+        "intent": "recruitment",
+        "text": "hire"
+      },
+      {
+        "intent": "recruitment",
+        "text": "enroll"
+      },
+      {
+        "intent": "recruitment",
+        "text": "join"
+      },
+      {
+        "intent": "recruitment",
+        "text": "collect"
+      },
+      {
+        "intent": "recruitment",
+        "text": "expand"
+      },
+      {
+        "intent": "development",
+        "text": "develop"
+      },
+      {
+        "intent": "development",
+        "text": "generate"
+      },
+      {
+        "intent": "development",
+        "text": "launch"
+      },
+      {
+        "intent": "development",
+        "text": "grow"
+      },
+      {
+        "intent": "development",
+        "text": "care"
+      },
+      {
+        "intent": "management",
+        "text": "manage"
+      },
+      {
+        "intent": "management",
+        "text": "lead"
+      },
+      {
+        "intent": "management",
+        "text": "operate"
+      },
+      {
+        "intent": "management",
+        "text": "control"
+      },
+      {
+        "intent": "management",
+        "text": "govern"
+      },
+      {
+        "intent": "management",
+        "text": "administer"
+      },
+      {
+        "intent": "management",
+        "text": "conduct"
+      },
+      {
+        "intent": "management",
+        "text": "handle"
+      },
+      {
+        "intent": "management",
+        "text": "transact"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

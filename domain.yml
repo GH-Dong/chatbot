@@ -1,0 +1,60 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- recruit
+- develop
+- manage
+- learn
+entities:
+- recruit
+- develop
+- manage
+- learn
+
+templates:
+  utter_end_manage:
+  - text: All your concerns  are received by the manage department. Please don't worry, our
+      professional consultants will contact you immediately.
+  utter_end_recruit:
+    - text: All your concerns  are received by the recruit department. Please don't worry, our
+        professional consultants will contact you immediately.
+  utter_end_develop:
+    - text: All your concerns  are received by the develop department. Please don't worry, our
+        professional consultants will contact you immediately.
+  utter_end_learn:
+    - text: All your concerns  are received by the coaching department. Please don't worry, our
+        professional consultants will contact you immediately.
+
+  utter_end_good:
+  - text: Message recieved! Thank you again for choosing our services. Wish you a
+      happy day!
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great carry on!
+  utter_project_name:
+  - text: Hey! How are you? What project do you want to say something?
+  utter_response_bad:
+  - text: I am sorry. How can I help you? What are the issues which you are countering?
+  utter_response_good:
+  - text: So glad to hear about that.
+  utter_ask_opinion:
+  - text: How do you like our service in this project? Did it fulfil your requirements?
+      If not, we are listening from you carefully.
+actions:
+- utter_end_manage
+- utter_end_recruit
+- utter_end_develop
+- utter_end_learn
+- utter_end_good
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_project_name
+- utter_response_bad
+- utter_response_good
+- utter_ask_opinion

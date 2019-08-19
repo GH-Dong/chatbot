@@ -1,0 +1,190 @@
+2019-08-04 14:31:53,444 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 14:32:43,052 [INFO ]  Killing Sanic server now.
+2019-08-05 08:38:59,431 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 08:39:22,769 [INFO ]  Killing Sanic server now.
+2019-08-05 08:39:26,655 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 08:39:37,194 [INFO ]  Killing Sanic server now.
+2019-08-05 08:39:41,037 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 08:39:52,378 [INFO ]  Killing Sanic server now.
+2019-08-05 08:39:56,383 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 08:40:12,405 [INFO ]  Killing Sanic server now.
+2019-08-05 08:40:16,199 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 09:40:57,470 [INFO ]  Killing Sanic server now.
+2019-08-06 09:41:03,890 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 10:55:50,213 [INFO ]  Killing Sanic server now.
+2019-08-06 10:55:54,163 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 10:56:24,105 [INFO ]  Killing Sanic server now.
+2019-08-06 10:56:47,500 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 10:57:59,660 [INFO ]  Killing Sanic server now.
+2019-08-06 10:59:28,854 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 11:00:32,501 [INFO ]  Killing Sanic server now.
+2019-08-06 15:39:56,835 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 15:41:43,883 [INFO ]  Killing Sanic server now.
+2019-08-06 15:41:55,239 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 15:49:01,555 [INFO ]  Killing Sanic server now.
+2019-08-06 15:49:13,852 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 15:50:57,800 [INFO ]  Killing Sanic server now.
+2019-08-06 15:51:46,106 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 15:51:46,288 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/sanic/app.py", line 1096, in run
+    serve(**server_settings)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/sanic/server.py", line 742, in serve
+    trigger_events(before_start, loop)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/sanic/server.py", line 604, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1445, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1438, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1347, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 487, in uvloop.loop.Loop._run
+  File "uvloop/loop.pyx", line 404, in uvloop.loop.Loop._on_idle
+  File "uvloop/cbhandles.pyx", line 66, in uvloop.loop.Handle._run
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/run.py", line 199, in load_agent_on_start
+    _interpreter = NaturalLanguageInterpreter.create(nlu_model, endpoints.nlu)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/interpreter.py", line 53, in create
+    return RasaNLUInterpreter(model_directory=obj)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/interpreter.py", line 250, in __init__
+    self._load_interpreter()
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/interpreter.py", line 270, in _load_interpreter
+    self.interpreter = Interpreter.load(self.model_directory)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/nlu/model.py", line 301, in load
+    return Interpreter.create(model_metadata, component_builder, skip_validation)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/nlu/model.py", line 328, in create
+    component_meta, model_metadata.model_dir, model_metadata, **context
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/nlu/components.py", line 433, in load_component
+    component_meta, model_dir, model_metadata, cached_component, **context
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/nlu/registry.py", line 181, in load_component_by_meta
+    component_meta, model_dir, metadata, cached_component, **kwargs
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/nlu/classifiers/embedding_intent_classifier.py", line 699, in load
+    saver.restore(sess, checkpoint)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/training/saver.py", line 1276, in restore
+    {self.saver_def.filename_tensor_name: save_path})
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/socketio/client.py", line 25, in signal_handler
+    return original_signal_handler(sig, frame)
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/engineio/client.py", line 41, in signal_handler
+    return original_signal_handler(sig, frame)
+KeyboardInterrupt
+2019-08-06 15:52:15,544 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 15:52:28,809 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-08-06 16:12:26,539 [INFO ]  Killing Sanic server now.
+2019-08-06 16:12:41,277 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 16:13:10,805 [INFO ]  Killing Sanic server now.
+2019-08-06 16:15:06,778 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 16:29:12,124 [INFO ]  Killing Sanic server now.
+2019-08-06 16:29:16,853 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-07 16:02:19,420 [INFO ]  Killing Sanic server now.
+2019-08-08 10:00:40,416 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-08 10:01:08,065 [INFO ]  Killing Sanic server now.
+2019-08-13 09:57:07,453 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 09:57:28,435 [ERROR]  Failed to fill utterance template 'All your concerns  are received by the {seg}. Please don't worry, our professional consultants will contact you immediately.'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 09:58:00,976 [INFO ]  Killing Sanic server now.
+2019-08-13 10:00:26,628 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:00:42,287 [ERROR]  Failed to fill utterance template 'All your concerns  are received by the {"seg"}. Please don't worry, our professional consultants will contact you immediately.'. Tried to replace '"seg"' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: '"seg"'
+2019-08-13 10:02:50,436 [INFO ]  Killing Sanic server now.
+2019-08-13 10:07:53,148 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:08:07,017 [ERROR]  Failed to fill utterance template 'All your concerns  are received by the {"seg"}. Please don't worry, our professional consultants will contact you immediately.'. Tried to replace '"seg"' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: '"seg"'
+2019-08-13 10:12:44,795 [INFO ]  Killing Sanic server now.
+2019-08-13 10:14:12,654 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:14:23,619 [ERROR]  Failed to fill utterance template 'All your concerns  are received by the {"seg"}. Please don't worry, our professional consultants will contact you immediately.'. Tried to replace '"seg"' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: '"seg"'
+2019-08-13 10:17:05,494 [INFO ]  Killing Sanic server now.
+2019-08-13 10:21:01,049 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:22:18,631 [INFO ]  Killing Sanic server now.
+2019-08-13 10:25:10,533 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:30:43,931 [INFO ]  Killing Sanic server now.
+2019-08-13 10:32:18,081 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:37:51,327 [INFO ]  Killing Sanic server now.
+2019-08-13 10:39:17,615 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:51:01,575 [INFO ]  Killing Sanic server now.
+2019-08-13 10:53:55,117 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:57:12,220 [INFO ]  Killing Sanic server now.
+2019-08-13 10:57:16,099 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 10:57:20,546 [INFO ]  Killing Sanic server now.
+2019-08-13 10:59:56,363 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:00:08,135 [INFO ]  Killing Sanic server now.
+2019-08-13 11:01:34,461 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:02:32,589 [INFO ]  Killing Sanic server now.
+2019-08-13 11:03:58,595 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:04:36,236 [INFO ]  Killing Sanic server now.
+2019-08-13 11:10:22,618 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:10:36,558 [INFO ]  Killing Sanic server now.
+2019-08-13 11:10:53,822 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:17:11,080 [INFO ]  Killing Sanic server now.
+2019-08-13 11:18:49,734 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:18:53,374 [ERROR]  Failed to fill utterance template 'Hey! How are you {seg}?'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 11:19:08,083 [ERROR]  Failed to fill utterance template 'All your concerns  are received by the {seg}. Please don't worry, our professional consultants will contact you immediately.'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 11:19:50,757 [INFO ]  Killing Sanic server now.
+2019-08-13 11:21:27,141 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-13 11:21:31,048 [ERROR]  Failed to fill utterance template 'Hey! How are you {seg}?'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 11:21:49,176 [ERROR]  Failed to fill utterance template 'Hey! How are you {seg}?'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 11:21:53,794 [ERROR]  Failed to fill utterance template 'Hey! How are you {seg}?'. Tried to replace 'seg' but could not find a value for it. There is no slot with this name nor did you pass the value explicitly when calling the template. Return template without filling the template. 
+Traceback (most recent call last):
+  File "/Users/genghuadong/miniconda3/envs/chatbot/lib/python3.7/site-packages/rasa/core/nlg/interpolator.py", line 16, in interpolate_text
+    return text.format(values)
+KeyError: 'seg'
+2019-08-13 11:22:21,149 [INFO ]  Killing Sanic server now.
+2019-08-19 12:16:48,751 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:08:10,147 [INFO ]  Killing Sanic server now.
+2019-08-19 13:08:58,530 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:12:29,841 [INFO ]  Killing Sanic server now.
+2019-08-19 13:20:06,390 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:20:30,456 [INFO ]  Killing Sanic server now.
+2019-08-19 13:23:49,347 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:24:16,850 [INFO ]  Killing Sanic server now.
+2019-08-19 13:32:42,701 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:32:59,318 [INFO ]  Killing Sanic server now.
+2019-08-19 13:33:26,377 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:35:21,034 [INFO ]  Killing Sanic server now.
+2019-08-19 13:44:12,903 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:44:28,382 [INFO ]  Killing Sanic server now.
+2019-08-19 13:46:23,738 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 13:47:45,365 [INFO ]  Killing Sanic server now.
+2019-08-19 14:40:29,057 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 14:42:11,671 [INFO ]  Killing Sanic server now.
+2019-08-19 14:42:16,635 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 14:54:42,614 [INFO ]  Killing Sanic server now.
+2019-08-19 14:59:15,859 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-19 15:01:22,163 [INFO ]  Killing Sanic server now.
